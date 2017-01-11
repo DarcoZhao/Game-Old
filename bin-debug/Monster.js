@@ -15,8 +15,8 @@ var Monster = (function (_super) {
         this.addChild(this.photo);
         this.anchorOffsetX = this.photo.width / 2;
         this.anchorOffsetY = this.photo.height;
-        this.x = 600;
-        this.y = 1000;
+        this.x = 900;
+        this.y = 600;
         this.myname.text = this.myPros.name;
         this.myname.y = this.photo.y - this.myname.height - 5;
         this.addChild(this.myname);

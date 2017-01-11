@@ -1,0 +1,450 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,armour_png,Dia1_png,Dia2_png,EquBG_png,hat_png,shoes_png,shoes1_png,spear_png,spear1_png,spear2_png,Monster1_png,Monster2_png,NPC1_png,NPC2_png,NPC3_png,Obs1_png,Obs2_png,Obs3_png,Obs4_png,S1_jpg,S2_jpg,S3_jpg,Scene1_png,场景 (1)_png,场景 (10)_png,场景 (11)_png,场景 (12)_png,场景 (13)_png,场景 (14)_png,场景 (15)_png,场景 (16)_png,场景 (17)_png,场景 (18)_png,场景 (19)_png,场景 (2)_png,场景 (20)_png,场景 (21)_png,场景 (22)_png,场景 (23)_png,场景 (24)_png,场景 (25)_png,场景 (26)_png,场景 (27)_png,场景 (28)_png,场景 (29)_png,场景 (3)_png,场景 (30)_png,场景 (4)_png,场景 (5)_png,场景 (6)_png,场景 (7)_png,场景 (8)_png,场景 (9)_png,Accept_png,Concel_png,Conversation_png,FinTask_png,NewTask1_png,NewTask2_png,Okay_png,Panel_png,TaskButton_png,EuqP_png,HeroButton_png,UserPanel_jpg,Idle1_png,Idle2_png,Idle3_png,Idle4_png,L1_png,L2_png,L3_png,L4_png,LBack1_png,LBack2_png,LBack3_png,LBack4_png,R1_png,R2_png,R3_png,R4_png,RBack1_png,RBack2_png,RBack3_png,RBack4_png,LevelUp_png,Power_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "armour_png",
+			"type": "image",
+			"url": "assets/Equ/armour.png"
+		},
+		{
+			"name": "Dia1_png",
+			"type": "image",
+			"url": "assets/Equ/Dia1.png"
+		},
+		{
+			"name": "Dia2_png",
+			"type": "image",
+			"url": "assets/Equ/Dia2.png"
+		},
+		{
+			"name": "EquBG_png",
+			"type": "image",
+			"url": "assets/Equ/EquBG.png"
+		},
+		{
+			"name": "hat_png",
+			"type": "image",
+			"url": "assets/Equ/hat.png"
+		},
+		{
+			"name": "shoes_png",
+			"type": "image",
+			"url": "assets/Equ/shoes.png"
+		},
+		{
+			"name": "shoes1_png",
+			"type": "image",
+			"url": "assets/Equ/shoes1.png"
+		},
+		{
+			"name": "spear_png",
+			"type": "image",
+			"url": "assets/Equ/spear.png"
+		},
+		{
+			"name": "spear1_png",
+			"type": "image",
+			"url": "assets/Equ/spear1.png"
+		},
+		{
+			"name": "spear2_png",
+			"type": "image",
+			"url": "assets/Equ/spear2.png"
+		},
+		{
+			"name": "Monster1_png",
+			"type": "image",
+			"url": "assets/NPC/Monster1.png"
+		},
+		{
+			"name": "Monster2_png",
+			"type": "image",
+			"url": "assets/NPC/Monster2.png"
+		},
+		{
+			"name": "NPC1_png",
+			"type": "image",
+			"url": "assets/NPC/NPC1.png"
+		},
+		{
+			"name": "NPC2_png",
+			"type": "image",
+			"url": "assets/NPC/NPC2.png"
+		},
+		{
+			"name": "NPC3_png",
+			"type": "image",
+			"url": "assets/NPC/NPC3.png"
+		},
+		{
+			"name": "Obs1_png",
+			"type": "image",
+			"url": "assets/Scene/Obs1.png"
+		},
+		{
+			"name": "Obs2_png",
+			"type": "image",
+			"url": "assets/Scene/Obs2.png"
+		},
+		{
+			"name": "Obs3_png",
+			"type": "image",
+			"url": "assets/Scene/Obs3.png"
+		},
+		{
+			"name": "Obs4_png",
+			"type": "image",
+			"url": "assets/Scene/Obs4.png"
+		},
+		{
+			"name": "S1_jpg",
+			"type": "image",
+			"url": "assets/Scene/S1.jpg"
+		},
+		{
+			"name": "S2_jpg",
+			"type": "image",
+			"url": "assets/Scene/S2.jpg"
+		},
+		{
+			"name": "S3_jpg",
+			"type": "image",
+			"url": "assets/Scene/S3.jpg"
+		},
+		{
+			"name": "Scene1_png",
+			"type": "image",
+			"url": "assets/Scene/Scene1.png"
+		},
+		{
+			"name": "场景 (1)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (1).png"
+		},
+		{
+			"name": "场景 (10)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (10).png"
+		},
+		{
+			"name": "场景 (11)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (11).png"
+		},
+		{
+			"name": "场景 (12)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (12).png"
+		},
+		{
+			"name": "场景 (13)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (13).png"
+		},
+		{
+			"name": "场景 (14)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (14).png"
+		},
+		{
+			"name": "场景 (15)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (15).png"
+		},
+		{
+			"name": "场景 (16)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (16).png"
+		},
+		{
+			"name": "场景 (17)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (17).png"
+		},
+		{
+			"name": "场景 (18)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (18).png"
+		},
+		{
+			"name": "场景 (19)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (19).png"
+		},
+		{
+			"name": "场景 (2)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (2).png"
+		},
+		{
+			"name": "场景 (20)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (20).png"
+		},
+		{
+			"name": "场景 (21)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (21).png"
+		},
+		{
+			"name": "场景 (22)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (22).png"
+		},
+		{
+			"name": "场景 (23)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (23).png"
+		},
+		{
+			"name": "场景 (24)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (24).png"
+		},
+		{
+			"name": "场景 (25)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (25).png"
+		},
+		{
+			"name": "场景 (26)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (26).png"
+		},
+		{
+			"name": "场景 (27)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (27).png"
+		},
+		{
+			"name": "场景 (28)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (28).png"
+		},
+		{
+			"name": "场景 (29)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (29).png"
+		},
+		{
+			"name": "场景 (3)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (3).png"
+		},
+		{
+			"name": "场景 (30)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (30).png"
+		},
+		{
+			"name": "场景 (4)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (4).png"
+		},
+		{
+			"name": "场景 (5)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (5).png"
+		},
+		{
+			"name": "场景 (6)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (6).png"
+		},
+		{
+			"name": "场景 (7)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (7).png"
+		},
+		{
+			"name": "场景 (8)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (8).png"
+		},
+		{
+			"name": "场景 (9)_png",
+			"type": "image",
+			"url": "assets/Scene/场景 (9).png"
+		},
+		{
+			"name": "Accept_png",
+			"type": "image",
+			"url": "assets/Task/Accept.png"
+		},
+		{
+			"name": "Concel_png",
+			"type": "image",
+			"url": "assets/Task/Concel.png"
+		},
+		{
+			"name": "Conversation_png",
+			"type": "image",
+			"url": "assets/Task/Conversation.png"
+		},
+		{
+			"name": "FinTask_png",
+			"type": "image",
+			"url": "assets/Task/FinTask.png"
+		},
+		{
+			"name": "NewTask1_png",
+			"type": "image",
+			"url": "assets/Task/NewTask1.png"
+		},
+		{
+			"name": "NewTask2_png",
+			"type": "image",
+			"url": "assets/Task/NewTask2.png"
+		},
+		{
+			"name": "Okay_png",
+			"type": "image",
+			"url": "assets/Task/Okay.png"
+		},
+		{
+			"name": "Panel_png",
+			"type": "image",
+			"url": "assets/Task/Panel.png"
+		},
+		{
+			"name": "TaskButton_png",
+			"type": "image",
+			"url": "assets/Task/TaskButton.png"
+		},
+		{
+			"name": "EuqP_png",
+			"type": "image",
+			"url": "assets/UI/EuqP.png"
+		},
+		{
+			"name": "HeroButton_png",
+			"type": "image",
+			"url": "assets/UI/HeroButton.png"
+		},
+		{
+			"name": "UserPanel_jpg",
+			"type": "image",
+			"url": "assets/UI/UserPanel.jpg"
+		},
+		{
+			"name": "Idle1_png",
+			"type": "image",
+			"url": "assets/Walk/Idle1.png"
+		},
+		{
+			"name": "Idle2_png",
+			"type": "image",
+			"url": "assets/Walk/Idle2.png"
+		},
+		{
+			"name": "Idle3_png",
+			"type": "image",
+			"url": "assets/Walk/Idle3.png"
+		},
+		{
+			"name": "Idle4_png",
+			"type": "image",
+			"url": "assets/Walk/Idle4.png"
+		},
+		{
+			"name": "L1_png",
+			"type": "image",
+			"url": "assets/Walk/L1.png"
+		},
+		{
+			"name": "L2_png",
+			"type": "image",
+			"url": "assets/Walk/L2.png"
+		},
+		{
+			"name": "L3_png",
+			"type": "image",
+			"url": "assets/Walk/L3.png"
+		},
+		{
+			"name": "L4_png",
+			"type": "image",
+			"url": "assets/Walk/L4.png"
+		},
+		{
+			"name": "LBack1_png",
+			"type": "image",
+			"url": "assets/Walk/LBack1.png"
+		},
+		{
+			"name": "LBack2_png",
+			"type": "image",
+			"url": "assets/Walk/LBack2.png"
+		},
+		{
+			"name": "LBack3_png",
+			"type": "image",
+			"url": "assets/Walk/LBack3.png"
+		},
+		{
+			"name": "LBack4_png",
+			"type": "image",
+			"url": "assets/Walk/LBack4.png"
+		},
+		{
+			"name": "R1_png",
+			"type": "image",
+			"url": "assets/Walk/R1.png"
+		},
+		{
+			"name": "R2_png",
+			"type": "image",
+			"url": "assets/Walk/R2.png"
+		},
+		{
+			"name": "R3_png",
+			"type": "image",
+			"url": "assets/Walk/R3.png"
+		},
+		{
+			"name": "R4_png",
+			"type": "image",
+			"url": "assets/Walk/R4.png"
+		},
+		{
+			"name": "RBack1_png",
+			"type": "image",
+			"url": "assets/Walk/RBack1.png"
+		},
+		{
+			"name": "RBack2_png",
+			"type": "image",
+			"url": "assets/Walk/RBack2.png"
+		},
+		{
+			"name": "RBack3_png",
+			"type": "image",
+			"url": "assets/Walk/RBack3.png"
+		},
+		{
+			"name": "RBack4_png",
+			"type": "image",
+			"url": "assets/Walk/RBack4.png"
+		},
+		{
+			"name": "LevelUp_png",
+			"type": "image",
+			"url": "assets/UI/LevelUp.png"
+		},
+		{
+			"name": "Power_png",
+			"type": "image",
+			"url": "assets/UI/Power.png"
+		}
+	]
+}

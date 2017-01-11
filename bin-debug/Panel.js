@@ -32,8 +32,8 @@ var HeroPanel = (function (_super) {
         this.addChild(this.texts);
         this.addChild(this.cancelButton);
         this.myButton = this.createBitmapByName("HeroButton_png");
-        this.cancelButton.x = this.cancelButton.width;
-        this.cancelButton.y = this.cancelButton.height;
+        this.cancelButton.x = this.cancelButton.width + 150;
+        this.cancelButton.y = this.cancelButton.height + 400;
         this.equ1.touchEnabled = true;
         this.equ1.addEventListener(egret.TouchEvent.TOUCH_BEGIN, function () { _this.mouseDown(_this.equ1, 0); }, this);
         this.equ1.addEventListener(egret.TouchEvent.TOUCH_END, function () { _this.mouseUp(); }, this);

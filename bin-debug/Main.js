@@ -328,7 +328,7 @@ var Main = (function (_super) {
         this.addChild(this.BigMap);
         //     this.dayin(this.BigMap);
         this.addChild(this.Player);
-        this.Player.x = this.Player.y = 300;
+        this.Player.x = this.Player.y = 650;
         this.Player.Idle();
         background.touchEnabled = true;
         background.addEventListener(egret.TouchEvent.TOUCH_TAP, this.UserMove, this);
@@ -337,8 +337,8 @@ var Main = (function (_super) {
         this.LoadUser();
     };
     p.LoadUser = function () {
-        var huli = new Hero(4001, this.Player);
-        this.myUser.addHero(huli);
+        var me = new Hero(4001, this.Player);
+        this.myUser.addHero(me);
     };
     p.Equclick = function (e) {
         this.commands.cancel();

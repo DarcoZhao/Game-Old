@@ -101,11 +101,11 @@ class Hero {
 
     private get Def(): number {
 
-         this.pros.all[2].value =0;
-         this.pros.all[2].value += this.Lv * 10;
+        this.pros.all[2].value = 0;
+        this.pros.all[2].value += this.Lv * 10;
         this.pros.all[2].value += this.basicP.all[2].value;
-        this.myEquipments.forEach(Eq =>  this.pros.all[2].value += Eq.Def)
-        return  this.pros.all[2].value;
+        this.myEquipments.forEach(Eq => this.pros.all[2].value += Eq.Def)
+        return this.pros.all[2].value;
 
     };
 
@@ -147,7 +147,7 @@ class Equipment {
 
     constructor(ID: number) {
       this.basicP = ThingsFactory.makeAEuqe(ID);
-  this.pros = ThingsFactory.makeAEuqe(ID);
+      this.pros = ThingsFactory.makeAEuqe(ID);
     }
 
 
@@ -210,7 +210,7 @@ class gem {
 
     constructor(ID: number) {
         this.basicP = ThingsFactory.makeAEuqe(ID);
-          this.pros = ThingsFactory.makeAEuqe(ID);
+        this.pros = ThingsFactory.makeAEuqe(ID);
     }
 }
 

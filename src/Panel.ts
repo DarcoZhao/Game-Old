@@ -40,8 +40,8 @@ class HeroPanel extends egret.DisplayObjectContainer {
         
         this.myButton=this.createBitmapByName("HeroButton_png");
         
-        this.cancelButton.x=this.cancelButton.width;
-        this.cancelButton.y=this.cancelButton.height;
+        this.cancelButton.x=this.cancelButton.width+150;
+        this.cancelButton.y=this.cancelButton.height+400;
 
 
         this.equ1.touchEnabled=true;

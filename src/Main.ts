@@ -396,7 +396,7 @@ class Main extends egret.DisplayObjectContainer {
         //     this.dayin(this.BigMap);
 
         this.addChild(this.Player);
-        this.Player.x = this.Player.y = 300;
+        this.Player.x = this.Player.y = 650;
         this.Player.Idle();
 
         background.touchEnabled = true;
@@ -409,8 +409,8 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     LoadUser() {
-        var huli = new Hero(4001, this.Player);
-        this.myUser.addHero(huli);
+        var me = new Hero(4001, this.Player);
+        this.myUser.addHero(me);
 
 
     }

@@ -22,8 +22,8 @@ class TaskPanel extends egret.DisplayObjectContainer implements Observer{
         this.cancelButton.touchEnabled=true;
         this.addChild(this.myphoto);
         this.addChild(this.cancelButton);
-        this.cancelButton.x=this.cancelButton.width;
-        this.cancelButton.y=this.cancelButton.height;
+        this.cancelButton.x=this.cancelButton.width+100;
+        this.cancelButton.y=this.cancelButton.height+250;
         this.cancelButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onButtonClick,this);
 
         this.touchEnabled=false;
@@ -104,10 +104,10 @@ class DialoguePanel extends egret.DisplayObjectContainer{
         this.acceptButton=this.createBitmapByName("Accept_png");
         this.cancelButton=this.createBitmapByName("Concel_png");
         this.finishButton=this.createBitmapByName("Okay_png");
-        this.acceptButton.x=this.finishButton.x=this.stageW-this.acceptButton.width*3-this.x;
-        this.acceptButton.y=this.finishButton.y=this.stageH-this.acceptButton.height*2-this.y;
-        this.cancelButton.x=this.stageW-this.acceptButton.width*1.5-this.x;
-        this.cancelButton.y=this.stageH-this.acceptButton.height*2-this.y;
+        this.acceptButton.x=this.finishButton.x=this.stageW-this.acceptButton.width*3.4-this.x;
+        this.acceptButton.y=this.finishButton.y=this.stageH-this.acceptButton.height*2.5-this.y;
+        this.cancelButton.x=this.stageW-this.acceptButton.width*1.7-this.x;
+        this.cancelButton.y=this.stageH-this.acceptButton.height*2.5-this.y;
         this.NPCName.x=30;
         this.NPCName.y=50;
         this.textField.x=30;

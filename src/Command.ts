@@ -16,11 +16,11 @@ class WalkCommand implements Command {
     private x;
     private y;
     public aStar:Astar;
-    Player:Pole;
+    Player:PLAYER;
     _num =0;
 
 
-    constructor(x: number, y: number,as:Astar,pl:Pole) {
+    constructor(x: number, y: number,as:Astar,pl:PLAYER) {
         this.x = x;
         this.y = y;
         this.aStar=as;
@@ -45,9 +45,9 @@ class FightCommand implements Command {
     M:Monster;
     T:Task;
     h:Hero;
-    Player:Pole;
+    Player:PLAYER;
     
-    constructor(Monster: Monster, task: Task,hero:Hero,Player:Pole){
+    constructor(Monster: Monster, task: Task,hero:Hero,Player:PLAYER){
         this.T=task;
         this.M=Monster;
         this.h=hero;

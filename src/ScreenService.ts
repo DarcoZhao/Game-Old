@@ -1,23 +1,23 @@
 // TypeScript file
-class SenService {
+class ScreenService {
 
     public observerList:Observer[]=[];
-    private static instance:SenService;
+    private static instance:ScreenService;
     public static count=0;
 
     constructor(){
-         SenService.count++;
-        if( SenService.count >1){
+         ScreenService.count++;
+        if( ScreenService.count >1){
             throw 'singleton';
         }
 
     }
 
      public static getInstance() {
-        if(SenService.instance ==null) {
-            SenService.instance =new SenService();
+        if(ScreenService.instance ==null) {
+            ScreenService.instance =new ScreenService();
         }
-        return SenService.instance;
+        return ScreenService.instance;
     }
     addObserver(observer:Observer){
         this.observerList.push(observer);

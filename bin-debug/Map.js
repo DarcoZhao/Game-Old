@@ -39,9 +39,9 @@ var MapConfig = [
     { x: 0, y: 3, canW: false, textag: 0 },
     { x: 1, y: 3, canW: false, textag: 0 },
     { x: 2, y: 3, canW: true, textag: 0 },
-    { x: 3, y: 3, canW: false, textag: 0 },
-    { x: 4, y: 3, canW: false, textag: 0 },
-    { x: 5, y: 3, canW: false, textag: 0 },
+    { x: 3, y: 3, canW: false, textag: 1 },
+    { x: 4, y: 3, canW: false, textag: 2 },
+    { x: 5, y: 3, canW: false, textag: 3 },
     { x: 6, y: 3, canW: true, textag: 0 },
     { x: 7, y: 3, canW: true, textag: 0 },
     { x: 8, y: 3, canW: true, textag: 0 },
@@ -50,8 +50,8 @@ var MapConfig = [
     { x: 1, y: 4, canW: false, textag: 0 },
     { x: 2, y: 4, canW: true, textag: 0 },
     { x: 3, y: 4, canW: true, textag: 0 },
-    { x: 4, y: 4, canW: false, textag: 1 },
-    { x: 5, y: 4, canW: false, textag: 2 },
+    { x: 4, y: 4, canW: false, textag: 0 },
+    { x: 5, y: 4, canW: false, textag: 0 },
     { x: 6, y: 4, canW: false, textag: 1 },
     { x: 7, y: 4, canW: true, textag: 0 },
     { x: 8, y: 4, canW: true, textag: 0 },
@@ -105,7 +105,7 @@ var MapConfig = [
     { x: 6, y: 9, canW: false, textag: 0 },
     { x: 7, y: 9, canW: false, textag: 0 },
     { x: 8, y: 9, canW: false, textag: 0 },
-    { x: 9, y: 9, canW: false, textag: 2 },
+    { x: 9, y: 9, canW: false, textag: 0 },
 ];
 var MapTile = (function () {
     function MapTile() {
@@ -118,7 +118,7 @@ var MainMap = (function (_super) {
     __extends(MainMap, _super);
     function MainMap() {
         _super.call(this);
-        this.TileSize = 80;
+        this.TileSize = 120;
         this.MapTiles = new Array();
         this.MapViews = new Array();
         this.W = 0;
@@ -210,8 +210,6 @@ var Astar = (function () {
         if (this.isF(this.EndN)) {
             this.EndNcanW = false;
         }
-        //     console.log("起点：x:"+this.nowN.x+"y:"+this.nowN.y);
-        //     console.log("终点：x:"+this.EndN.x+"y:"+this.EndN.y);
         if (this.nowN.x == this.EndN.x && this.nowN.y == this.EndN.y) {
             this.IsOk = true;
             this.EndN.fn = this.nowN;
@@ -219,15 +217,13 @@ var Astar = (function () {
         var t = 0;
         do {
             this.nowN = this.getgoodN();
-            this.ZhaozhouweiN(this.nowN);
+            this.FindSur(this.nowN);
             this.C.push(this.nowN);
             t++;
             if (this.O.length <= 0 || this.IsOk) {
                 break;
             }
         } while (this.EndNcanW);
-        //  console.log("第一个wh用了："+t);
-        //  console.log("额外点赛了："+this.u);
         var Psfan = new Array();
         if (this.EndNcanW) {
             Psfan.push(this.EndN);
@@ -242,14 +238,12 @@ var Astar = (function () {
         var j = 0;
         for (var i = Psfan.length; i > 0; i--) {
             this.path.push(Psfan[i - 1]);
-            //        console.log("x:"+this.Ps[j].x+"y:"+this.Ps[j].y);
             this.path[j].x = this.path[j].x * this.BM.TileSize + this.BM.TileSize / 2;
             this.path[j].y = this.path[j].y * this.BM.TileSize + this.BM.TileSize / 2;
             j++;
         }
-        //   console.log("计算完毕");
     };
-    p.ZhaozhouweiN = function (n) {
+    p.FindSur = function (n) {
         this.AddNtoO(n, n.x - 1, n.y - 1);
         this.AddNtoO(n, n.x, n.y - 1);
         this.AddNtoO(n, n.x + 1, n.y - 1);

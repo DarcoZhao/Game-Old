@@ -4,8 +4,6 @@ var TaskPanel = (function (_super) {
         _super.call(this);
         this.textField = [];
         this.nowtaskList = [];
-        this.stageH = 1136;
-        this.stageW = 640;
         this.myButton = this.createBitmapByName("TaskButton_png");
         this.myphoto = this.createBitmapByName("Panel_png");
         this.cancelButton = this.createBitmapByName("Concel_png");
@@ -207,11 +205,10 @@ var EquTaskCondition = (function (_super) {
                     var i = task.getcurrent();
                     i++;
                     task.setcurrent(i);
-                    console.log("杀了一只");
                 }
             }
         };
-        SenService.getInstance().addObserver(observer);
+        ScreenService.getInstance().addObserver(observer);
     };
     p.onsubmit = function (task) {
     };
@@ -240,7 +237,7 @@ var KillMonsterTaskCondition = (function (_super) {
                 }
             }
         };
-        SenService.getInstance().addObserver(observer);
+        ScreenService.getInstance().addObserver(observer);
     };
     p.onsubmit = function (task) {
     };
@@ -460,8 +457,8 @@ var Tasks = [
     { id: "task_03", name: "T4", desc: "请击杀Boss", status: 0, fromNPCid: "npc_1", toNPCid: "npc_0", condition: new KillMonsterTaskCondition(5002, 1), nexttaskid: null },
 ];
 var NPCs = [
-    { id: "npc_0", name: "小红", wrod: "你好！", photo: "NPC1_png", pos_x: 6, pos_y: 6 },
-    { id: "npc_1", name: "小明", wrod: "快去拯救世界吧少年", photo: "NPC2_png", pos_x: 7, pos_y: 10 },
+    { id: "npc_0", name: "小红", wrod: "你好！", photo: "NPC1_png", pos_x: 5, pos_y: 5 },
+    { id: "npc_1", name: "小明", wrod: "快去拯救世界吧少年", photo: "NPC2_png", pos_x: 7, pos_y: 8 },
 ];
 var emojis = [
     { name: "" },

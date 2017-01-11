@@ -1,10 +1,12 @@
 // TypeScript file
 
+/*
 var Monsters =[
     {id:1001,name:"Monster",word:"咕唧咕唧",Hp:400,Def:0,Atk:80,Cri:0,exp:10,Ani:101,Ani2:102},
     {id:1002,name:"Boss",word:"你惹怒我了小子！",Hp:5000,Def:200,Atk:800,Cri:90,exp:100,Ani:201,Ani2:202},
 
 ]
+*/
 
 
 
@@ -19,7 +21,7 @@ class Monster extends egret.DisplayObjectContainer{
         
         super();
         this.myId=n;
-        this.myPros=ThingsFactory.makeAMon(n);
+        this.myPros=Fac.makeAMon(n);
         this.photo=this.createBitmapByName(this.myPros.img);
         this.addChild(this.photo);
         this.anchorOffsetX=this.photo.width/2;
@@ -31,7 +33,7 @@ class Monster extends egret.DisplayObjectContainer{
         this.addChild(this.myname);
 
     }
-    onButtonClick(hero:Hero,player:Pole) {
+    onButtonClick(hero:Hero,player:PLAYER) {
         this.scaleX = (this.x < player.x) ? 1: -1
         player.Fight();
         var hurt1 = (hero.pros.all[0].value > this.myPros.all[2] .value)? hero.pros.all[0].value - this.myPros.all[2] .value :0 ;
@@ -46,7 +48,7 @@ class Monster extends egret.DisplayObjectContainer{
        if(this.myPros.all[3].value<=0){     
             UIs.levelUp(hero);
               hero.Lvup();    
-              var ss:SenService=SenService.getInstance();
+              var ss:ScreenService=ScreenService.getInstance();
               ss.notify(this.myId);
               this.parent.removeChild(this);
         }
@@ -85,7 +87,7 @@ class EquButton extends egret.DisplayObjectContainer{
          UIs.getEqu(hero);
          this.disapprear();
          
-         var ss=SenService.getInstance();
+         var ss=ScreenService.getInstance();
          ss.notify(this.ID);
 
     }

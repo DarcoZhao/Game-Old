@@ -1,8 +1,11 @@
 // TypeScript file
-var Monsters = [
-    { id: 1001, name: "Monster", word: "咕唧咕唧", Hp: 400, Def: 0, Atk: 80, Cri: 0, exp: 10, Ani: 101, Ani2: 102 },
-    { id: 1002, name: "Boss", word: "你惹怒我了小子！", Hp: 5000, Def: 200, Atk: 800, Cri: 90, exp: 100, Ani: 201, Ani2: 202 },
-];
+/*
+var Monsters =[
+    {id:1001,name:"Monster",word:"咕唧咕唧",Hp:400,Def:0,Atk:80,Cri:0,exp:10,Ani:101,Ani2:102},
+    {id:1002,name:"Boss",word:"你惹怒我了小子！",Hp:5000,Def:200,Atk:800,Cri:90,exp:100,Ani:201,Ani2:202},
+
+]
+*/
 var Monster = (function (_super) {
     __extends(Monster, _super);
     function Monster(n) {
@@ -10,7 +13,7 @@ var Monster = (function (_super) {
         this.myPros = new Propertys();
         this.myname = new egret.TextField();
         this.myId = n;
-        this.myPros = ThingsFactory.makeAMon(n);
+        this.myPros = Fac.makeAMon(n);
         this.photo = this.createBitmapByName(this.myPros.img);
         this.addChild(this.photo);
         this.anchorOffsetX = this.photo.width / 2;
@@ -35,7 +38,7 @@ var Monster = (function (_super) {
         if (this.myPros.all[3].value <= 0) {
             UIs.levelUp(hero);
             hero.Lvup();
-            var ss = SenService.getInstance();
+            var ss = ScreenService.getInstance();
             ss.notify(this.myId);
             this.parent.removeChild(this);
         }
@@ -67,7 +70,7 @@ var EquButton = (function (_super) {
         hero.addEquipment(this.myEqu);
         UIs.getEqu(hero);
         this.disapprear();
-        var ss = SenService.getInstance();
+        var ss = ScreenService.getInstance();
         ss.notify(this.ID);
     };
     p.apprear = function (m) {

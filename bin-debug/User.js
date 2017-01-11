@@ -48,8 +48,8 @@ var Hero = (function () {
         this.myEquipments = [];
         this.pros = new Propertys();
         this.basicP = new Propertys();
-        this.basicP = ThingsFactory.makeAEuqe(ID);
-        this.pros = ThingsFactory.makeAEuqe(ID);
+        this.basicP = Fac.makeAEuqe(ID);
+        this.pros = Fac.makeAEuqe(ID);
         this.myplay = player;
     }
     var d = __define,c=Hero,p=c.prototype;
@@ -96,7 +96,7 @@ var Hero = (function () {
             this.pros.all[1].value += this.Lv * 1;
             this.pros.all[1].value += this.basicP.all[1].value;
             this.myEquipments.forEach(function (Eq) { return _this.pros.all[1].value += Eq.Cri; });
-            //     console.log("hero的攻击"+this.pros.all[1].value);
+            //console.log("hero的攻击"+this.pros.all[1].value);
             return this.pros.all[1].value;
         }
     );
@@ -120,8 +120,8 @@ var Equipment = (function () {
         this.pros = new Propertys();
         this.basicP = new Propertys();
         this.myGams = [];
-        this.basicP = ThingsFactory.makeAEuqe(ID);
-        this.pros = ThingsFactory.makeAEuqe(ID);
+        this.basicP = Fac.makeAEuqe(ID);
+        this.pros = Fac.makeAEuqe(ID);
     }
     var d = __define,c=Equipment,p=c.prototype;
     d(p, "maxHP"
@@ -177,8 +177,8 @@ var gem = (function () {
         this.ID = 0;
         this.basicP = new Propertys();
         this.pros = new Propertys();
-        this.basicP = ThingsFactory.makeAEuqe(ID);
-        this.pros = ThingsFactory.makeAEuqe(ID);
+        this.basicP = Fac.makeAEuqe(ID);
+        this.pros = Fac.makeAEuqe(ID);
     }
     var d = __define,c=gem,p=c.prototype;
     return gem;
@@ -221,7 +221,7 @@ egret.registerClass(Propertys,'Propertys');
 var Euqconfig = [
     { id: 1001, name: "spear", atk: 120, def: 0, maxHP: 10, crit: 10, img: "spear_png" },
     { id: 1002, name: "spear", atk: 220, def: 0, maxHP: 0, crit: 0, img: "spear1_png" },
-    { id: 1003, name: "great spear", atk: 420, def: 200, maxHP: 100, crit: 50, img: "spear2_png" },
+    { id: 1005, name: "great spear", atk: 420, def: 200, maxHP: 100, crit: 50, img: "spear2_png" },
     { id: 2001, name: "armour", atk: 20, def: 200, maxHP: 200, crit: 0, img: "armour_png" },
     { id: 2002, name: "hat", atk: 80, def: 300, maxHP: 300, crit: 0, img: "hat_png" },
     { id: 2003, name: "shoes", atk: 2333, def: 3600, maxHP: 10000, crit: 20, img: "shoes_png" },

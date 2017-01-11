@@ -12,8 +12,6 @@ class TaskPanel extends egret.DisplayObjectContainer implements Observer{
     textField:egret.TextField[]=[];
     cancelButton:egret.Bitmap;
     nowtaskList:Task[]=[];
-    stageH=1136;
-    stageW=640;
     constructor(){
         super();
         this.myButton=this.createBitmapByName("TaskButton_png");
@@ -228,13 +226,13 @@ class EquTaskCondition extends TaskCondition  {
                       var i =task.getcurrent();
                     i++;
                     task.setcurrent(i);
-                    console.log("杀了一只");
+                    //console.log("one");
                 }
               
             }
         }
 
-        SenService.getInstance().addObserver(observer);
+        ScreenService.getInstance().addObserver(observer);
     }
     onsubmit(task:Task) {
 
@@ -267,7 +265,7 @@ class KillMonsterTaskCondition extends TaskCondition {
             }
         }
 
-        SenService.getInstance().addObserver(observer);
+        ScreenService.getInstance().addObserver(observer);
     }
     onsubmit(task:Task) {
 
@@ -531,8 +529,8 @@ let Tasks= [
 ]
 
 let NPCs=[
-    {id:"npc_0",name:"小红",wrod:"你好！",photo:"NPC1_png",pos_x:6,pos_y:6},
-    {id:"npc_1",name:"小明",wrod:"快去拯救世界吧少年",photo:"NPC2_png",pos_x:7,pos_y:10},
+    {id:"npc_0",name:"小红",wrod:"你好！",photo:"NPC1_png",pos_x:5,pos_y:5},
+    {id:"npc_1",name:"小明",wrod:"快去拯救世界吧少年",photo:"NPC2_png",pos_x:7,pos_y:8},
 ]
 
 let emojis=[

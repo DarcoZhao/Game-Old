@@ -64,8 +64,8 @@ class Hero {
     basicP:Propertys  = new Propertys();
 
     constructor(ID: number,player:egret.DisplayObjectContainer) {
-        this.basicP = ThingsFactory.makeAEuqe(ID);
-          this.pros = ThingsFactory.makeAEuqe(ID);
+        this.basicP = Fac.makeAEuqe(ID);
+          this.pros = Fac.makeAEuqe(ID);
         this.myplay =player;
     }
 
@@ -115,8 +115,7 @@ class Hero {
         this.pros.all[1].value += this.Lv * 1;
         this.pros.all[1].value += this.basicP.all[1].value;
         this.myEquipments.forEach(Eq =>  this.pros.all[1].value += Eq.Cri)
-
-   //     console.log("hero的攻击"+this.pros.all[1].value);
+        //console.log("hero的攻击"+this.pros.all[1].value);
         return  this.pros.all[1].value;
 
     };
@@ -146,8 +145,8 @@ class Equipment {
 
 
     constructor(ID: number) {
-      this.basicP = ThingsFactory.makeAEuqe(ID);
-      this.pros = ThingsFactory.makeAEuqe(ID);
+      this.basicP = Fac.makeAEuqe(ID);
+      this.pros = Fac.makeAEuqe(ID);
     }
 
 
@@ -209,8 +208,8 @@ class gem {
 
 
     constructor(ID: number) {
-        this.basicP = ThingsFactory.makeAEuqe(ID);
-        this.pros = ThingsFactory.makeAEuqe(ID);
+        this.basicP = Fac.makeAEuqe(ID);
+        this.pros = Fac.makeAEuqe(ID);
     }
 }
 
@@ -271,7 +270,7 @@ class Propertys {
 var Euqconfig = [
     { id: 1001, name: "spear", atk: 120, def: 0, maxHP: 10, crit: 10, img: "spear_png" },
     { id: 1002, name: "spear", atk: 220, def: 0, maxHP: 0, crit: 0, img: "spear1_png" },
-    { id: 1003, name: "great spear", atk: 420, def: 200, maxHP: 100, crit: 50, img: "spear2_png" },
+    { id: 1005, name: "great spear", atk: 420, def: 200, maxHP: 100, crit: 50, img: "spear2_png" },
 
     { id: 2001, name: "armour", atk: 20, def: 200, maxHP: 200, crit: 0, img: "armour_png" },
     { id: 2002, name: "hat", atk: 80, def: 300, maxHP: 300, crit: 0, img: "hat_png" },
